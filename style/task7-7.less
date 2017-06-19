@@ -1,0 +1,127 @@
+@charset "utf-8";
+*{
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  max-width: 720px;
+  margin:0 auto;
+}
+html{
+  font-size: 625%;
+}
+body{
+
+}
+
+.header{
+
+  text-align: center;
+  color: #fff;
+  font-size: .3rem;
+  margin-bottom: 10px;
+  padding:.1rem .2rem;
+  border-bottom: 1px solid #74d4eb;
+  background: #29bde0;
+  a{
+    display: block;
+  }
+}
+.back{
+  width: 25px;
+  height: 41px;
+  background: url("../images/backicon.png");
+  float: left;
+}
+.end{
+  width: 36px;
+  height: 36px;
+  background: url("../images/del.png");
+  float: right;
+}//header结束!
+
+.day{
+  margin: 0 .1rem;
+  height: .58rem;
+  line-height: .58rem;
+  text-align: center;
+  font-size:.25rem;
+  color:#29bde0;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.downdrop{
+  display: inline-block;
+  width:30px;
+  height: 17px;
+  background: url("../images/downdrop.png");
+  position: absolute;
+  top:50%;
+  right: 10px;
+  transform:translateY(-50%);
+}
+
+
+.gameflow-wrap{
+  margin-left: 10%;
+  padding-top: 20px;
+  border-left: 1px solid #ccc;
+  position: relative;
+}
+
+.sun{
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+  background: #fff url("../images/sun.png") no-repeat center;
+  width: .4rem;
+  height: .4rem;
+  left: -25px;
+}
+
+.dead-wrap{
+  position: relative;
+}
+
+
+.moon{
+  display: inline-block;
+  position: absolute;
+  z-index: 99;
+  padding: 3px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  box-sizing: content-box;
+  background:#fff url("../images/moon.png") no-repeat center;
+  width: .4rem;
+  height: .4rem;
+  left:-25px;
+  top:1px;
+}
+
+
+
+
+.gameflow{
+  background: #29bde0;
+  color: #fff;
+  font-size: .2rem;
+  width: 70%;
+  height: .5rem;
+  line-height: .5rem;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+
+  span{
+    display: inline-block;
+    position: absolute;
+    border-top: 5px solid transparent;
+    border-right: 10px solid #29bde0;
+    border-bottom: 5px solid transparent;
+    left: -10px;
+    top:20px;
+  }
+}

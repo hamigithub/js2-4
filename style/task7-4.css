@@ -1,0 +1,203 @@
+@charset "utf-8";
+* {
+  padding: 0;
+  font-family: "Microsoft YaHei";
+  max-width: 720px;
+  margin: 0 auto;
+}
+html {
+  font-size: 625%;
+}
+body {
+  background: #f0f0f0;
+}
+.nav {
+  height: .54rem;
+  line-height: .54rem;
+  background: #29bde0;
+  text-align: center;
+  color: #fff;
+}
+.nav img {
+  float: left;
+  margin: .06rem 0 0 .1rem;
+}
+.footer {
+  text-align: center;
+  height: .6rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 .1rem;
+}
+.footer-btn {
+  background: #fab344;
+  width: 100%;
+  font-size: .3rem;
+  color: #fff;
+  border-radius: 0;
+}
+form {
+  display: inline-block;
+}
+form input {
+  width: .3rem;
+  border-radius: 0;
+}
+input[type=range] {
+  display: inline-block;
+  width: 50%;
+}
+::-webkit-input-placeholder {
+  /* 设置input-placeholder在不同浏览器内核的兼容默认颜色*/
+  color: #e1e5e7;
+}
+:-moz-placeholder {
+  /* 设置input-placeholder在不同浏览器内核的兼容默认颜色*/
+  color: #e1e5e7;
+}
+::-moz-placeholder {
+  /* 设置input-placeholder在不同浏览器内核的兼容默认颜色*/
+  color: #e1e5e7;
+}
+:-ms-input-placeholder {
+  /* 设置input-placeholder在不同浏览器内核的兼容默认颜色*/
+  color: #e1e5e7;
+}
+.team {
+  clear: both;
+  background: #fff;
+  text-align: center;
+  margin: 0 .1rem;
+  font-size: .2rem;
+}
+.team input {
+  width: 90%;
+  border-style: none;
+  outline: none;
+  padding-bottom: .1rem;
+  border-bottom: 1px solid #ccc;
+  margin: .1rem auto;
+}
+.main {
+  height: 2.28rem;
+  margin: .1rem;
+}
+.main div {
+  float: left;
+}
+.main .btnn {
+  color: #29bde0;
+  font-size: .2rem;
+  width: 80%;
+  height: 20%;
+  line-height: .5rem;
+  text-align: center;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+.main .btnn span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url("../images/pencil.png") no-repeat 0px 0px;
+}
+.main-left {
+  background: #fff;
+  width: 20%;
+  font-size: .3rem;
+  padding: .3rem 0;
+}
+.main-left p {
+  width: 0.3rem;
+  margin: 0 auto;
+}
+.main-right {
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  padding: .2rem .2rem;
+  font-size: .18rem;
+}
+.main-right > span {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  height: .3rem;
+  line-height: .3rem;
+  color: #a1a1a1;
+  margin: .1rem auto;
+}
+.main-right > span span {
+  display: inline-block;
+  width: .1rem;
+  height: .1rem;
+  margin-right: .1rem;
+}
+.killer span {
+  background: #fab344;
+}
+.civilian span {
+  background: #29bde0;
+}
+.guide {
+  margin: .1rem .1rem 0;
+  background: #fff;
+  padding: .2rem 5%;
+  font-size: .2rem;
+}
+.guide input {
+  background: #f4f5f5;
+  border-style: none;
+  color: #fab344;
+  text-align: center;
+}
+.range {
+  text-align: center;
+  margin: 0 .1rem .8rem;
+  padding: .1rem 0;
+  background: #fff;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  background-color: #fcc671;
+  height: 5px;
+  border-radius: 10px;
+  margin: .2rem;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  cursor: default;
+  height: 36px;
+  width: 60px;
+  background: url(../images/rangebtn.png);
+  background-size: cover;
+}
+input[type=range]:focus {
+  outline: none;
+}
+.leftbtn {
+  width: 28px;
+  height: 28px;
+  background: url("../images/leftbtn.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.rightbtn {
+  width: 28px;
+  height: 28px;
+  background: url("../images/rightbtn.png");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none;
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei";
+}
+html{
+    font-size: 625%;
+}
+body{
+    background: #f0f0f0;
+    max-width: 720px;
+    margin:0 auto;
+}
+
+.nav{
+    height: 0.44rem;
+    background: #29bde0;
+}
+.nav a{
+    display: inline-block;
+    width: 0.17rem;
+    height: 0.135rem;
+    background-image: url(../images/nav1.png);
+    background-size: 100%;
+    margin: 0.15rem 0 0 0.23rem;
+}
+
+.column{
+    position: relative;
+    width: 90%;
+    height: 0.58rem;
+    margin:0.18rem auto 0.18rem auto;
+    font-size:0.2rem;
+    line-height: 0.57rem;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #cbcbcb;
+    color: #9a9a9a;
+
+}
+.column a{
+    width: 0.12rem;
+    height: 0.2rem;
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: 2%;
+    background-image: url(../images/icon.png);
+    background-size: 100%;
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    border: 1px solid #cbcbcb;
+    position: relative;
+}
+.main-title{
+    height: 0.465rem;
+    margin-bottom: 0.18rem;
+    text-align: center;
+    line-height: 0.465rem;
+    font-size: 0.2rem;
+    color: #fbb435;
+    border-bottom:1px solid #fbb435;
+}
+
+.content{
+    text-align: center;
+    position: relative;
+}
+.main>a{
+    display: inline-block;
+    position: absolute;
+    right: 1%;
+    top: 2.1rem;
+    width: 0.09rem;
+    height: 0.18rem;
+    border-top:0.18rem solid transparent;
+    border-bottom: 0.18rem solid transparent;
+    border-left: 0.18rem solid #fbb435;
+    z-index: 1;
+}
+.content-btn{
+    outline: none !important;
+    height: 0.68rem;
+    width: 86%;
+    background: #69d1e9;
+    border-radius: 0;
+    color: #fff;
+    font-size: 0.19rem;
+}
+.content>p{
+    font-size: 0.17rem;
+    margin:0.18rem 0;
+}
+.footer{
+    text-align: center;
+}
+.footer>a{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: #f0f0f0;
+    border-radius: 50%;
+}
+.footer>a:hover{
+    background: #69d1e9
+}
