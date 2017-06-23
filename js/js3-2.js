@@ -1,9 +1,10 @@
 /**
  * Created by Administrator on 2017/6/10 0010.
  */
-var pesonsArray=JSON.parse(localStorage.getItem("persons"));
-
-
+var pesonsArray=JSON.parse(sessionStorage.getItem("persons"));
+var day=1;
+sessionStorage.setItem('day',JSON.stringify(day));
+var date=JSON.parse(sessionStorage.getItem('day'));
 
 $(document).ready(function(){
 
@@ -44,9 +45,8 @@ $(document).ready(function(){
         bib[i].innerHTML=bibl;
     }//按人数生成相应数量的盒子
 
-    $(".olo").on({
-        click:function(){$(this).find("div").hide();},
-        mouseleave:function(){$(this).find("div").show();}
+    $(".olo").click(function(){
+        $(this).find('div').toggle();
     });//点击盒子将覆盖的图片隐藏，将身份显示出来，鼠标移开后重新覆盖掉身份
 
 

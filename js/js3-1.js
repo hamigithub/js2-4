@@ -2,7 +2,7 @@
  * Created by Administrator on 2017/6/6 0006.
  */
 
-var pesonsArray=JSON.parse(localStorage.getItem("persons"));
+var pesonsArray=JSON.parse(sessionStorage.getItem("persons"));
 console.log(pesonsArray);
 $(document).ready(function(){
     $(".back").click(function(){

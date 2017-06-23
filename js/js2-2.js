@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/5/30 0030.
  */
-localStorage.clear();
+sessionStorage.clear();
 var back=document.getElementById("back");
 back.onclick=function (){
     var y = confirm('你确定要结束本次游戏？');
@@ -69,7 +69,7 @@ setting.onclick=function () {
 
     var ibi=[];
     ibi=persons;
-    localStorage.setItem('persons',JSON.stringify(ibi));
+    sessionStorage.setItem('persons',JSON.stringify(ibi));
 
     var ke="<span class='killer'><span></span>  杀手 1人</span>"
     var bi="<span class='civilian'><span></span>水民 1人</span>"
