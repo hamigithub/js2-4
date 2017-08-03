@@ -1,0 +1,176 @@
+/*common*/
+html {
+	font-size: 62.5%;
+}
+body {
+	min-width: 320px;
+	max-width: 640px;
+    padding-bottom: 2rem;
+	margin: 0 auto;
+    background: #f0f0f0;
+}
+/*header*/
+header {
+	padding: 1rem 0;
+	border-bottom: 1px solid #fff;
+	background: #29bde0;
+	overflow: hidden;
+}
+.pull-left {
+	float: left;
+	width: 2rem;
+	padding: 0.3rem 0 0 1rem;
+	cursor: pointer;
+}
+.pull-right {
+	float: right;
+	width: 2rem;
+	margin: 0.2rem 1rem 0 0;
+	cursor: pointer;
+}
+header h3 {
+	color: #fff;
+	font-size: 1.7rem;
+	text-align: center;
+}
+/*main*/
+.content {
+    margin: 1rem 0.8rem 0.8rem 0.8rem;
+    border: 1px solid #c9c9c9;
+    background: #fff
+}
+.playtime {
+    margin-top: 1.8rem;
+}
+.theDay {
+    margin: 0 0.8rem;
+    height: 4rem;
+    border: 1px solid #c9c9c9;
+    background: #fff url("../images/arrows.png") right 1rem center no-repeat;
+    line-height: 4rem;
+    text-align: center;
+    cursor: pointer;
+    color: #29bde0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+.tri {
+    width: 0;
+    margin: -1.6rem auto 0;
+    height: 0;
+    border-width: 0.8rem 0.6rem;
+    border-color: transparent transparent #fff transparent;
+    border-style: dashed dashed solid dashed;
+    text-align: center;
+}
+.detail {
+    display: none;
+    border: 1px solid #c9c9c9;
+    margin: 0.8rem;
+    background: #fff;
+    text-align: center;
+}
+.detail p{
+    line-height: 3rem;
+    font-size: 1rem;
+}
+ul {
+    padding-bottom: 4.2rem;
+    border-left: 2px solid #c9c9c9;
+    margin-left: 2rem;
+    text-align: right;
+    letter-spacing: 0.2rem;
+}
+li {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: flex-end;
+}
+.message1, .message2 {
+    width: 87%;
+    padding-left: 3rem;
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 0.05rem;
+}
+.moon, .sun {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 -0.5rem 0 -1.7rem;
+    border: 2px solid #c9c9c9;
+    border-radius: 3rem;
+    background-color: #fff !important;
+}
+.moon {
+    background: url("../images/moon.png") center no-repeat;
+}
+.sun {
+    background: url("../images/sun.png") center no-repeat;
+}
+i {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 0.6rem 1rem;
+    border-color: transparent #24a7c6 transparent transparent;
+    border-style: dashed solid dashed dashed;
+    cursor: pointer;
+}
+.cat-1 {
+    padding-top: 1.5rem;
+}
+span {
+    display: block;
+    width: 87%;
+    margin: 0.5rem 0;
+    height: 3.8rem;
+    background: #24a7c6;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 3.8rem;
+    cursor: pointer;
+    text-align: center;
+}
+/*footer*/
+footer {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    background: rgba(153, 233, 240, .5);
+}
+footer button {
+    width: 50%;
+    height: 3rem;
+    border: 0;
+    border-radius: 10px;
+    margin: 1rem;
+    background: orange;
+    color: #fff;
+    font-size: 1.5rem;
+    outline: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 320px) {
+	html {
+		font-size: 73.5%;
+	}
+}
+@media screen and (min-width: 425px) {
+	html {
+		font-size: 85%;
+	}
+}
+@media screen and (min-width: 550px) {
+	html {
+		font-size: 111%;
+	}
+}
+@media screen and (min-width: 640px) {
+	html {
+		font-size: 136%;
+	}
+}

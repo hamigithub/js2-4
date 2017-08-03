@@ -1,0 +1,134 @@
+/*common*/
+html {
+
+}
+body {
+	margin: 0 auto;
+	max-width: 640px;
+	min-width: 320px;
+	letter-spacing: 0.2rem;
+}
+/*header*/
+header {
+    padding: 1rem 0;
+    border-bottom: 1px solid #74d4eb;
+    background: #29bde0;
+    overflow: hidden;
+}
+.pull-left {
+    float: left;
+    width: 2rem;
+    padding-left: 1rem;
+    cursor: pointer;
+}
+.pull-right {
+    float: right;
+    width: 2rem;
+    margin: 0.2rem 1rem 0 0;
+    cursor: pointer;
+}
+header h3 {
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+}
+/*top*/
+.top {
+	padding: 1.3rem 10% 1rem 10%;
+	background: #29bde0;
+}
+.top h3 {
+    display: flex;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    height: 11rem;
+    background: url("../images/success.png") center no-repeat;
+    background-size: contain;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: flex-end;
+}
+.top span {
+	color: #ffc865;
+	font-size: 1.6rem;
+}
+.result {
+	padding-top: 2.8rem;
+}
+.result p, .result span,.row {
+	height: 2rem;
+	line-height: 2rem;
+	color: #e2f3f9;
+	font-size: 1.3rem;
+}
+.result span {
+    margin-right: 2rem;
+}
+/*details*/
+.details{
+	padding-bottom: 8rem;
+	background: #fff;
+}
+.wrap {
+	padding: 0 10% 1.8rem 10%;
+	border-bottom: 2px solid #dddddd;
+}
+.wrap p {
+	display: inline-block;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	color: #a6a6a6;
+	font-size: 1.3rem;
+}
+.time {
+    padding: 0.7rem 0 1rem 0;
+    color: #515151;
+    font-size: 1.5rem;
+}
+/*footer*/
+footer {
+	position: fixed;
+	display: flex;
+	bottom: 0;
+	width: 100%;
+	max-width: 640px;
+	background: rgba(153, 233, 240, .5);
+}
+button {
+	width: 50%;
+	height: 3rem;
+	border: 0;
+	border-radius: 10px;
+	margin: 1rem;
+    color: #fff;
+	font-size: 1.5rem;
+	outline: none;
+	cursor: pointer;
+}
+.again {
+	background: #f66f6f;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.uploading{
+	background: #fbb435;
+	overflow: hidden;
+	white-space: nowrap;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media screen and (min-width: 420px) {
+    html {
+        font-size: 65%;
+    }
+}
+@media screen and (min-width: 520px) {
+    html {
+        font-size: 116%;
+    }
+}

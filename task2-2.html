@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-en">
+    <meta charset="UTF-8">
+    <title>参数设置</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/task2-2.css">
+</head>
+<body>
+    <header>
+        <a href="task2-1.html" class="pull-left">
+            <img src="images/back.png">
+        </a>
+        <a href="" class="pull-right">
+            <img src="images/help.png">
+        </a>
+        <h3>参数设置</h3>
+    </header>
+    <main>
+        <div class="item">
+            <div class="item-left">
+                <span>玩家配比</span>
+            </div>
+            <div class="item-right">
+                <div class="details">
+                    <ul class="list">
+                        <!--<li class="pant">-->
+                            <!--<span class="pant-color"></span>-->
+                            <!--<span class="pant-name"></span>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+                <button class="set">
+                    <span>点击设置</span>
+                    <img src="images/pencil.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div class="text">
+            <input type="text" placeholder="水民词组" class="water">
+            <input  type="text" placeholder="幽灵词组" class="ghost">
+        </div>
+        <div class="num">
+            <div class="num-top">
+                <span>玩家人数</span>
+                <input class="players-num" id="playersNum" value="6" maxlength="2">
+                <span>人</span>
+            </div>
+            <div class="num-details">
+                <button class="btn-min" id="btnMin"></button>
+                <input class="slider" id="sliderBlock" type="range" step="1" value="6" min="6" max="18">
+                <button class="btn-add" id="btnAdd"></button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <button class="next" id="deal">去发牌</button>
+    </footer>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+    <script type="text/javascript" src="js/setRole.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+/*common*/
+html {
+	font-size: 62.5%;
+}
+body {
+	max-width: 640px;
+	margin: 0 auto;
+	background: #29bde0;
+	letter-spacing: 0.2rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+/*header*/
+header {
+	padding: 1rem 0;
+    border-bottom: 1px solid #74d4eb;
+	background: #29bde0;
+	overflow: hidden;
+}
+.pull-left {
+    float: left;
+    width: 2rem;
+    padding: 0.3rem 0 0 1rem;
+    cursor: pointer;
+}
+.pull-right {
+    float: right;
+    width: 2rem;
+    margin: 0.2rem 1rem 0 0;
+    cursor: pointer;
+}
+header h3 {
+	color: #fff;
+	font-size: 1.7rem;
+	text-align: center;
+}
+/*main*/
+.content {
+    position: relative;
+    width: 70%;
+    margin: 4.3rem auto;
+    height: 31.5rem;
+    border: 6px solid #fff;
+    background: #ffedc5;
+}
+.circle {
+    display: flex;
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 3px solid #ffedc5;
+    border-radius: 50%;
+    margin: -2rem auto;
+    background: #fff;
+    color: #f56b81;
+    font-size: 2rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+.picture {
+    text-align: center;
+}
+.role-show {
+    width: 15rem;
+    margin-top: 8rem;
+}
+.role-hidden{
+    width: 15rem;
+    margin-top: 3rem;
+}
+.role-text {
+    padding: 1rem;
+    color: #29bde0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.suggest {
+    padding: 1.5rem;
+    border-top: 2px solid #fff;
+    color: #fca000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/*footer*/
+footer {
+	margin: 0 auto;
+	max-width: 640px;
+	height: 7rem;
+}
+.next {
+	display: block;
+	padding: 1.2rem;
+	margin: 1.2rem 11%;
+	background: #fbb435;
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+    cursor: pointer;
+}
+@media screen and (min-width: 320px) {
+	html {
+		font-size: 73.5%;
+	}
+}
+@media screen and (min-width: 425px) {
+	html {
+		font-size: 85%;
+	}
+}
+@media screen and (min-width: 550px) {
+	html {
+		font-size: 111%;
+	}
+}
+@media screen and (min-width: 640px) {
+	html {
+		font-size: 136%;
+	}
+}

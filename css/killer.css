@@ -1,0 +1,171 @@
+/*common*/
+html {
+	font-size: 62.5%;
+}
+body {
+	min-width: 320px;
+	max-width: 640px;
+    padding-bottom: 11rem;
+	margin: 0 auto;
+    background: #29bde0;
+}
+/*header*/
+header {
+	padding: 1rem 0;
+	border-bottom: 1px solid #74d4eb;
+	background: #29bde0;
+	overflow: hidden;
+}
+.pull-left {
+	float: left;
+	width: 2rem;
+	padding: 0.3rem 0 0 1rem;
+	cursor: pointer;
+}
+.pull-right {
+	float: right;
+	width: 2rem;
+	margin: 0.2rem 1rem 0 0;
+	cursor: pointer;
+}
+header h3 {
+	color: #fff;
+	font-size: 1.7rem;
+	text-align: center;
+}
+/*top*/
+main {
+    position: relative;
+    width: 100%;
+    padding-bottom: 8rem;
+    background: #29bde0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.top h3 {
+    padding-left: 2.5rem;
+    height: 4rem;
+    background: #b9e9f5;
+    color: #464646;
+    line-height: 4rem;
+    font-size: 1.3rem;
+}
+.play {
+    top: 0.8rem;
+    right: 1rem;
+    display: inline-block;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../images/music.png") no-repeat;
+    background-size: 2.5rem 2.5rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+audio {
+    opacity: 0;
+	cursor: pointer;
+}
+.play img {
+    position: absolute;
+    top: 4.2rem;
+    right: 0;
+    width: 2.5rem;
+    margin: 0.8rem;
+}
+.top p {
+    padding-left: 3.5rem;
+    margin: 0.7rem 0 2rem 0;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.triangle-down {
+    position: relative;
+    left: 3.5rem;
+    width: 0;
+    margin-bottom: -0.8rem;
+    height: 0;
+    border-width: 15px 8px;
+    border-color: #b9e9f5 transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+}
+/*content*/
+.content {
+    display: inline-block;
+	margin: 1rem;
+}
+.wrap{
+    float: left;
+    width: 23%;
+    margin: 0 1.3rem;
+    cursor: pointer;
+}
+.box {
+	border: 5px solid #fff;
+    text-align: center;
+}
+.role {
+	height: 5rem;
+	background: #f5c97b;
+	line-height: 5rem;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.number {
+	height: 1.3rem;
+	background: #83b09a;
+	line-height: 1.3rem;
+	color: #fff;
+	font-size: 1.1rem;
+}
+.weapon {
+    display: block;
+    height: 3.6rem;
+    background: url(../images/knife.png) center no-repeat;
+    background-size: 1.8rem;
+    opacity: 0;
+}
+.wrap:hover .weapon{
+    opacity: 1;
+}
+/*footer*/
+footer {
+	position: fixed;
+	bottom: 0;
+	min-width: 320px;
+	max-width: 640px;
+	width: 100%;
+	height: 8rem;
+	background: #29bde0;
+}
+.next {
+	display: block;
+	width: 70%;
+	padding: 1rem;
+	margin: 2rem auto;
+	background: #fbb435;
+	color: #fff;
+	font-size: 2rem;
+    cursor: pointer;
+	text-align: center;
+}
+@media screen and (min-width: 320px) {
+	html {
+		font-size: 73.5%;
+	}
+}
+@media screen and (min-width: 425px) {
+	html {
+		font-size: 85%;
+	}
+}
+@media screen and (min-width: 550px) {
+	html {
+		font-size: 111%;
+	}
+}
+@media screen and (min-width: 640px) {
+	html {
+		font-size: 136%;
+	}
+}

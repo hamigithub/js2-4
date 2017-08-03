@@ -1,88 +1,58 @@
 /**
- * Created by Administrator on 2017/6/6 0006.
+ * Created by Chris Chen on 2017/4/27.
  */
+//获取任务2数据
+var thePlayers = sessionStorage.total;
+var total = JSON.parse(thePlayers);
+console.log(total);
 
-var pesonsArray=JSON.parse(sessionStorage.getItem("persons"));
-console.log(pesonsArray);
-$(document).ready(function(){
-    $(".back").click(function(){
-        window.location.href="js2-2.html";
-    })//返回上一页
+var clickRate = 1;
+var countPlayers = 1;
+console.log("clickRate"+clickRate);
+console.log("countPlayers"+countPlayers);
+//第一次点击：查看身份
+$(document).ready(function () {
+   if(countPlayers == 1){
+        $(".role-num").text(countPlayers);
+        $(".role-hidden, .role-text, .suggest").hide();
+        $(".role-show").show();
+        $("#check").text("查看"+countPlayers+"号身份");
+   }
+});
+//按钮
+$("#check").click(function () {
+    if(countPlayers < total.length+1){
+        $(".role-text").hide();
+        $(".role-num").text(countPlayers);
+        //奇数点击，隐藏并传递
+        if(clickRate % 2 == 1){
+            $(".role-num").text(countPlayers);
+            $(".role-show").hide();
+            $(".role-hidden, .role-text, .suggest").show();
+            if(total[countPlayers-1] == "平民"){
+                $(".role-text").text("平民");
 
-    $(".end").click(function(){
-        var a=confirm("确认退出游戏？")
-        if (a==true){
-            window.location.href="js2-1.html";
+            }
+            else{
+                $(".role-text").text("杀手");
+            }
+            if(countPlayers < total.length){
+                $("#check").text("隐藏并传递给"+(countPlayers+1)+"号");
+            }
+            else{
+                $("#check").text("查看法官日志");
+            }
+            countPlayers++;
         }
-        else {
-            return false;
+        //偶数点击，查看身份
+        if(clickRate %2 == 0){
+            $(".role-hidden, .role-text, .suggest").hide();
+            $(".role-show").show();
+            $("#check").text("查看"+countPlayers+"身份");
         }
-    })//确认是否结束游戏
-
-
-    var c=2;
-    var b=0;
-    var i=0;
-    var h=1;
-    var j=0;
-    $("#parts-wrap").hide()
-
-    function cba(){
-        if(b%2==0&&b<pesonsArray.length*2){
-            $(".number").text(c++);
-
-        }
-        else {
-            return false;
-        }
+        clickRate++;
     }
-
-    function cbb(){
-        if(b%2!==0&&b<pesonsArray.length*2-2){
-
-            $(".btn").text("隐藏并传递给"+ ++h +"号");
-
-        }
-        else {
-            $(".btn").text("查看"+ h +"号的身份");
-        }
-        //console.log(h);
+    else {
+        location.href = "task3-2.html";
     }
-
-    function cac(){
-        if (b==pesonsArray.length*2-1){
-            $(".btn").text("查看法官日志")
-        }
-        else if(b>pesonsArray.length*2-1){
-            $(".btn").click(window.location.href="js3-2.html")
-        }
-        else{
-            return false;
-        }
-    }
-
-    $(".btn").click(function(){
-        b++;
-        console.log(b);
-
-        if (i<1){
-            $("#hdfp").hide();
-            $("#parts-wrap").show();
-            $(".persons-title").text(pesonsArray[j]);
-            i++;
-            j++;
-        }
-        else if(i==1){
-            $("#hdfp").show();
-            $("#parts-wrap").hide();
-            i--;
-        }
-
-        cba();
-        cbb();
-        cac();
-    });
-
-
-
 });
