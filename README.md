@@ -1,6 +1,10 @@
-# js2-4
-jstask2-4
+## js2-4
 
-cookies H5本地储存 URL 页面之间传参
+基于原生ES5 及 jQuery 的学习笔记
 
-原生JS页面跳转 ES5基本OOP思想
+原生 JS 页面跳转 JS获取input标签value 数组乱序 键盘事件 正则表达式
+
+## 页面间传参
+
+H5浏览器的本地存储 localStorage和sessionStorage传参， url传参， cookies传参
+
